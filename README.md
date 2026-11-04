@@ -1,2 +1,2 @@
-# Class and Plugin for SuperCollider
-Collection of Class and Plugin for SuperCollider
+# Classes and Plugins for SuperCollider
+Collection of Classes and Plugins for SuperCollider
