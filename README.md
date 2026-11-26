@@ -1,8 +1,61 @@
 # Class and Plugin for SuperCollider
 
-**A collection of SuperCollider classes, language-side tools, and native audio plugins for sound synthesis, signal processing, algorithmic composition, and musical experimentation.**
+**A collection of SuperCollider classes, language-side tools, and native audio plugins for sound synthesis, signal processing, algorithmic composition, and musical experimentation, created using SuperCollider 3.14..**
 
 For Mac Silicon and Intel (Universal)
 
 This project is maintained as part of the Provinescu software collection for experimental music and sound organization.
+
+Notes:
+
+To use these Classes, you will need the contents of the ‘Extensions’ folder and, of course, the software classes too, in your own extensions folder.
+
+There are several Classes versions (exemple with Agents):
+
+Agents default/basic software.
+
+WekAgents  with Wekinator added to control parameters.
+
+AgentsTR  with HPtransformer added.
+
+WekAgentsTR -> with Wekinator and HPtransformer added.
+
+To use the Wek... versions, you need to install Wekinator: https://github.com/fiebrink1/wekinator
+
+You will find the necessary models for each piece of Wek... software in the repository:
+[Wekinator-Models-for-HP-Software](https://github.com/provinescu/Wekinator-Models-for-HP-Software)
+
+Quick started:
+
+Ensure that MIDI is enabled, essential for launching the software.
+
+Launch the Class.
+For exemple "Agents.new".
+The first time you use it, a folder named after the programme will be created in your ‘home/documents/’ directory.
+This is where the presets and data will be saved.
+You can, of course, create further working folders later on.
+
+Please note: some software programmes that use sounds loaded into memory are very sensitive to the number of sounds used.
+If you wish to use your own sounds, you will need to create a new folder so that the software can initialise the start-up files correctly.
+To use your sounds, edit the file named ‘sound’ or ‘list sound’ in the working folder, ensuring you follow the correct syntax, look at file.
+
+For Mac users, the mdfind function (Spotlight) allows you to load sound files that may no longer be located in the specified path.
+For Linux and Windows users, the paths to the sound files must be correct; otherwise, they will not be loaded.
+
+Check the guides!
+[ HP-Software-Guides](https://github.com/provinescu/HP-Software-Guides)
+
+Otherwise, explore and have fun.
+
+Notes:
+
+Launcher is a launcher with default settings for All Software.
+
+For versions using the Transformer, depending on the latency, you may receive ‘late’ messages. The Transformer performs a great deal of computation.
+
+With certain software, error messages may appear in the post window (e.g. ‘node not found’, ‘late’, ‘buffer’, etc.).
+These have no effect on the software’s operation.
+
+These classes use the VSTplugin class: https://github.com/Spacechild1/vstplugin
+
 
