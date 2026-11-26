@@ -6,18 +6,6 @@ For Mac Silicon and Intel (Universal)
 
 ---
 
-## Repository contents
-
-The repository currently exposes the following archives:
-
-| Archive | Intended content | Recommended use |
-|---|---|---|
-| `HP Class and Plugin.zip` | Packaged HP classes and compiled plugins | End users who need a ready-to-install package, after checking compatibility |
-| `HP Plugins C++.zip` | C++ source code for the native plugins | Developers who want to inspect or rebuild the plugins |
-| `HP Plugins+Class pour SC 3.14.zip` | Legacy classes and plugins prepared for SuperCollider 3.14 |
-
----
-
 ## Acknowledgements
 
 Built for [SuperCollider](https://supercollider.github.io/), an environment and programming language for real-time audio synthesis and algorithmic composition.
