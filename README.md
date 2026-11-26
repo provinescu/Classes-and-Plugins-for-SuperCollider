@@ -1,2 +1,3 @@
 # Class and Plugin for SuperCollider
-Collection of Class and Plugin for SuperCollider 3.14
+
+**A collection of SuperCollider classes, language-side tools, and native audio plugins for sound synthesis, signal processing, algorithmic composition, and musical experimentation.**
