@@ -4,11 +4,5 @@
 
 For Mac Silicon and Intel (Universal)
 
----
-
-## Acknowledgements
-
-Built for [SuperCollider](https://supercollider.github.io/), an environment and programming language for real-time audio synthesis and algorithmic composition.
-
 This project is maintained as part of the Provinescu software collection for experimental music and sound organization.
 
