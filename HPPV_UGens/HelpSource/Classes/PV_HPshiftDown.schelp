@@ -1,24 +1,26 @@
 TITLE:: PV_HPshiftDown
-summary:: Décalage spectral vers le bas
+summary:: Shifts spectral content downward
 categories:: UGens>FFT
 related:: Classes/FFT, Classes/IFFT, Classes/PV_ChainUGen
 
 DESCRIPTION::
-Traite une chaîne FFT et décale son contenu spectral vers le bas. Cet UGen doit être placé entre FFT et IFFT.
+Processes an FFT chain and shifts its spectral content downward. This UGen must be placed between FFT and IFFT.
 
 CLASSMETHODS::
+
 METHOD:: new
 
 ARGUMENT:: chain
-Chaîne PV produite par FFT ou par un autre UGen PV.
+A PV chain produced by FFT or another PV UGen.
 
 ARGUMENT:: shift
-Quantité de décalage spectral attendue par le plugin.
+The amount of downward spectral shift expected by the plugin.
 
 RETURNS::
-Une chaîne PV.
+A PV chain.
 
 EXAMPLES::
+
 code::
 (
 {

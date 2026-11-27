@@ -1,24 +1,26 @@
 TITLE:: PV_HPinverse
-summary:: Inversion de bins spectraux
+summary:: Inverts spectral bins
 categories:: UGens>FFT
 related:: Classes/FFT, Classes/IFFT, Classes/PV_ChainUGen
 
 DESCRIPTION::
-Inverse ou réorganise les bins d'une chaîne FFT selon l'algorithme du plugin. Cet UGen doit être placé entre FFT et IFFT.
+Inverts or rearranges the bins of an FFT chain according to the plugin's algorithm. This UGen must be placed between FFT and IFFT.
 
 CLASSMETHODS::
+
 METHOD:: new
 
 ARGUMENT:: chain
-Chaîne PV produite par FFT ou par un autre UGen PV.
+A PV chain produced by FFT or another PV UGen.
 
 ARGUMENT:: index
-Indice ou paramètre d'inversion utilisé par le plugin.
+The inversion index or parameter used by the plugin.
 
 RETURNS::
-Une chaîne PV.
+A PV chain.
 
 EXAMPLES::
+
 code::
 (
 {

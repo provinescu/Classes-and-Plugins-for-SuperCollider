@@ -1,27 +1,29 @@
 TITLE:: PV_HPfiltre
-summary:: Sélection d'une zone de bins spectraux
+summary:: Selects a range of spectral bins
 categories:: UGens>FFT
 related:: Classes/FFT, Classes/IFFT, Classes/PV_ChainUGen
 
 DESCRIPTION::
-Conserve ou traite une zone de bins définie par un indice de départ et une taille. Cet UGen doit être placé entre FFT et IFFT.
+Keeps or processes a range of spectral bins defined by a starting index and a size. This UGen must be placed between FFT and IFFT.
 
 CLASSMETHODS::
+
 METHOD:: new
 
 ARGUMENT:: chain
-Chaîne PV produite par FFT ou par un autre UGen PV.
+A PV chain produced by FFT or another PV UGen.
 
 ARGUMENT:: index
-Indice de départ de la zone spectrale.
+The starting index of the spectral range.
 
 ARGUMENT:: size
-Nombre de bins de la zone spectrale.
+The number of bins in the spectral range.
 
 RETURNS::
-Une chaîne PV.
+A PV chain.
 
 EXAMPLES::
+
 code::
 (
 {

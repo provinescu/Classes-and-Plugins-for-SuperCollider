@@ -1,5 +1,8 @@
 TITLE:: HPNeuralNetActivations
-summary:: Réseau multicouche, activation par couche
+summary:: Multilayer neural network with per-layer activation functions
 categories:: UGens>Machine Learning
+
 DESCRIPTION::
-Activations: sigmoid, tanh, relu, leakyRelu, linear et softsign. Fournir une activation par couche cachée, plus une pour la sortie.
+Provides the following activation functions: sigmoid, tanh, relu, leakyRelu, linear, and softsign.
+
+Specify one activation function for each hidden layer, followed by one activation function for the output layer.

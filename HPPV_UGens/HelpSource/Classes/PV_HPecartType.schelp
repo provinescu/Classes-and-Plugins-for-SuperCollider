@@ -1,24 +1,26 @@
 TITLE:: PV_HPecartType
-summary:: Transformation spectrale fondée sur l'écart type
+summary:: Spectral transformation based on standard deviation
 categories:: UGens>FFT
 related:: Classes/FFT, Classes/IFFT, Classes/PV_ChainUGen
 
 DESCRIPTION::
-Traite une chaîne FFT avec l'algorithme d'écart type défini par le plugin HPPV_UGens. Cet UGen doit être placé entre FFT et IFFT.
+Processes an FFT chain using the standard-deviation algorithm defined by the HPPV_UGens plugin. This UGen must be placed between FFT and IFFT.
 
 CLASSMETHODS::
+
 METHOD:: new
 
 ARGUMENT:: chain
-Chaîne PV produite par FFT ou par un autre UGen PV.
+A PV chain produced by FFT or another PV UGen.
 
 ARGUMENT:: multiplier
-Multiplicateur utilisé par le traitement spectral.
+The multiplier used by the spectral processing algorithm.
 
 RETURNS::
-Une chaîne PV.
+A PV chain.
 
 EXAMPLES::
+
 code::
 (
 {
