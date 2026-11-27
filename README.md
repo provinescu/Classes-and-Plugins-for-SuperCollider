@@ -65,4 +65,4 @@ This is an artistic and software project dedicated to experimental music, genera
 
 ## License
 
-See the repository's `LICENSE` file. Individual components may include their own licensing terms.
+See the repository's `LICENSE` file.
