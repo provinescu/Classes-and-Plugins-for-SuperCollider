@@ -1,102 +1,61 @@
-# Classes and Plugins for SuperCollider
+# Class and Plugin for SuperCollider
 
-> **Provinescu Software Production**
-> Experimental tools for composition, sound organization, synthesis, and live performance.
+**A collection of SuperCollider classes, language-side tools, and native audio plugins for sound synthesis, signal processing, algorithmic composition, and musical experimentation, created using SuperCollider 3.14..**
 
-**SuperCollider 3.14 · macOS · Apple Silicon and Intel · Generative Music**
+For Mac Silicon and Intel (Universal)
 
-This repository brings together SuperCollider classes, tools written in SuperCollider, and native audio plugins developed as part of my practice as a **drummer, composer, and software developer**.
+This project is maintained as part of the Provinescu software collection for experimental music and sound organization.
 
-## Overview
+Notes:
 
-These tools are designed to organize sound, build generative processes, transform audio, and create systems that can function as partners in the compositional process.
+To use these Classes, you will need the contents of the ‘Extensions’ folder and, of course, the software classes too, in your own extensions folder.
 
-## Repository contents
+There are several Classes versions (exemple with Agents):
 
-- Software classes for SuperCollider
-- Extensions required by the classes
-- Native audio plugins
-- Wek editions integrating Wekinator
-- TR editions integrating HPtransformer
-- Wek+TR editions combining Wekinator and HPtransformer
-- Launchers and supporting tools
+Agents default/basic software.
 
-## Available editions
+WekAgents  with Wekinator added to control parameters.
 
-| Edition | Typical name | Wekinator | HPtransformer | Main function |
-|---|---|:---:|:---:|---|
-| **Standard** | `Agents` | No | No | Standard functionality |
-| **Wek** | `WekAgents` | Yes | No | Parameter control via Wekinator |
-| **TR** | `AgentsTR` | No | Yes | Learning and generation with HPtransformer |
-| **Wek+TR** | `WekAgentsTR` | Yes | Yes | Combines Wekinator and HPtransformer |
+AgentsTR  with HPtransformer added.
 
-The `Wek` prefix identifies an edition that communicates with Wekinator. The `TR` suffix identifies an edition that integrates HPtransformer.
+WekAgentsTR -> with Wekinator and HPtransformer added.
 
-## Requirements
+To use the Wek... versions, you need to install Wekinator: https://github.com/fiebrink1/wekinator
 
-- SuperCollider 3.14
-- Contents of the `Extensions` folder supplied with the repository
-- A MIDI source enabled before launch
-- [VSTPlugin](https://github.com/Spacechild1/vstplugin) for classes using VST plugin hosting
-- [Wekinator](https://github.com/fiebrink1/wekinator) for Wek and Wek+TR editions
+You will find the necessary models for each piece of Wek... software in the repository:
+[Wekinator-Models-for-HP-Software](https://github.com/provinescu/Wekinator-Models-for-HP-Software)
 
-## Installation
+Quick started:
 
-1. Quit SuperCollider.
-2. Copy the required classes and extensions into your SuperCollider user `Extensions` folder.
-3. Restart SuperCollider and recompile the class library.
-4. Check the Post window for compilation errors.
-5. Enable a MIDI source before launching the software.
+Ensure that MIDI is enabled, essential for launching the software.
 
-## Quick start
+Launch the Class.
+For exemple "Agents.new".
+The first time you use it, a folder named after the programme will be created in your ‘home/documents/’ directory.
+This is where the presets and data will be saved.
+You can, of course, create further working folders later on.
 
-Evaluate the constructor of the class you want to use:
+Please note: some software programmes that use sounds loaded into memory are very sensitive to the number of sounds used.
+If you wish to use your own sounds, you will need to create a new folder so that the software can initialise the start-up files correctly.
+To use your sounds, edit the file named ‘sound’ or ‘list sound’ in the working folder, ensuring you follow the correct syntax, look at file.
 
-```supercollider
-Agents.new;
-```
+For Mac users, the mdfind function (Spotlight) allows you to load sound files that may no longer be located in the specified path.
+For Linux and Windows users, the paths to the sound files must be correct; otherwise, they will not be loaded.
 
-The first time it is launched, the software creates a working folder named after the program in your `Documents` folder. It contains presets, data, sound lists, and configuration files.
+Check the guides!
+[ HP-Software-Guides](https://github.com/provinescu/HP-Software-Guides)
 
-## Custom sounds
+Otherwise, explore and have fun.
 
-Some programs load sounds into memory and may be sensitive to the number or size of the selected files.
+Notes:
 
-To use your own sounds:
+Launcher is a launcher with default settings for All Software.
 
-1. Create a new working folder.
-2. Allow the software to initialize the required files.
-3. Locate the `sound` or `list sound` file.
-4. Make a backup copy.
-5. Edit the file while preserving its syntax exactly.
-6. Restart the software or reload its sound configuration.
+For versions using the Transformer, depending on the latency, you may receive ‘late’ messages. The Transformer performs a great deal of computation.
 
-On macOS, Spotlight's `mdfind` command can help locate files that have been moved. On Linux and Windows, all saved file paths must be valid and accessible.
+With certain software, error messages may appear in the post window (e.g. ‘node not found’, ‘late’, ‘buffer’, etc.).
+These have no effect on the software’s operation.
 
-## Performance and diagnostic messages
+These classes use the VSTplugin class: https://github.com/Spacechild1/vstplugin
 
-TR and Wek+TR editions require more real-time processing than Standard and Wek editions.
 
-Depending on audio-server latency and processor load, messages such as `late`, `node not found`, or `buffer` may occasionally appear in the SuperCollider Post window.
-
-If the software and audio continue to operate correctly, these messages are generally non-critical.
-
-## Documentation
-
-See:
-
-- [HP Software Guides](https://github.com/provinescu/HP-Software-Guides)
-- [Wekinator Models for HP Software](https://github.com/provinescu/Wekinator-Models-for-HP-Software)
-
-## Project philosophy
-
-An artistic and software project dedicated to experimental music, generative systems, and sound organization. The project is developed by a drummer, composer, and software developer.
-
-Explore the parameters, listen to the results, save useful configurations, and adapt the systems to your own musical practice.
-
-- [GitHub profile](https://github.com/provinescu)
-- [Music on Bandcamp](https://provinescu.bandcamp.com/)
-
-## License
-
-See the repository's `LICENSE` file for details.
