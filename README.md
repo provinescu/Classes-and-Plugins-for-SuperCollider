@@ -1,4 +1,4 @@
-# Classes and Plugins for SuperCollider
+# Class and Plugin for SuperCollider
 
 > **Provinescu Software Production**  
 > Independent classes, utilities, UGens, and audio plugins for direct use in SuperCollider.
