@@ -1,6 +1,6 @@
 # Class and Plugin for SuperCollider
 
-**A collection of SuperCollider classes, language-side tools, and native audio plugins for sound synthesis, signal processing, algorithmic composition, and musical experimentation, created using SuperCollider 3.14..**
+**A collection of SuperCollider classes, language-side tools, and native audio plugins for sound synthesis, signal processing, algorithmic composition, and musical experimentation, created using SuperCollider 3.14.**
 
 For Mac Silicon and Intel (Universal)
 
