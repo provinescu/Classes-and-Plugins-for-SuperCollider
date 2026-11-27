@@ -56,9 +56,9 @@ If a class or plugin is unavailable:
 - verify all required dependencies;
 - confirm compatibility with your operating system and processor architecture.
 
-## About Provinescu
+## About
 
-**Provinescu** is an artistic and software project dedicated to experimental music, generative systems, sound synthesis, and sound organization.
+This is an artistic and software project dedicated to experimental music, generative systems, sound synthesis, and sound organization.
 
 - [GitHub profile](https://github.com/provinescu)
 - [Music on Bandcamp](https://provinescu.bandcamp.com/)
